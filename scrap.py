@@ -10,6 +10,7 @@ chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
 chrome_options.add_argument("--mute-audio")
 chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
+chrome_options.add_argument("--disable-search-engine-choice-screen")
 #chrome_options.add_argument("--headless=new")
 
 def scraping(n,url):
