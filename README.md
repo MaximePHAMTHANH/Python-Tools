@@ -6,7 +6,7 @@ Python tools
 -> Tools to scrap websites using a VPN
 
 
--> Webcam Tools
+-> Webcam Resizer Tools
 
 
 -> Rex Automations
