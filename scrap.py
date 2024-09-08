@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
 import random
+import sys
 
 
 
@@ -22,16 +23,14 @@ def scraping(n,url):
 	driver.find_element(By.ID,'requestSubmit').click()
 
 	time.sleep(22)
-	get_url = driver.current_url
-	sleeping=random.randint(30, 180)
-	print("Pass N°"+str(n+1)+" / Sleeping for:"+str(sleeping)+"sec / The current url is:"+str(get_url))
+	sleeping=random.randint(600, 1800)
+	print("Pass N°"+str(n+1)+" of "+str(nb_of_scraps)+" // Sleeping for:"+str(sleeping)+"sec")
 	driver.close()
-	
 	time.sleep(sleeping)
 
 
-nb_of_scraps=10
-scrap_url="***"
+nb_of_scraps=int(sys.argv[1])
+scrap_url=""
 
-
+print("The scrapped url is: "+scrap_url+" // Doing "+str(nb_of_scraps)+" passes")
 for n in range(nb_of_scraps):scraping(n,scrap_url)
