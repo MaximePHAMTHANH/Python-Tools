@@ -4,3 +4,9 @@ Python tools
 
 
 -> Tools to scrap websites using a VPN
+
+
+-> Webcam Tools
+
+
+-> Rex Automations
