@@ -7,3 +7,6 @@ Python tools
 
 
 -> Rex Automations
+
+
+-> Podcast and Video Previews generation
